@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KrishiDarpan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>KrishiDarpan</h1>
+        </div>
+        <nav>
+            <button id="allIndia">All India data</button>
+            <button id="stateWise" class="active">State-wise data</button>
+            <button id="cropWise">Crop wise data</button>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Map of India -->
+        <div class="map-container">
+            <img src="india-map.png" alt="Map of India" class="india-map">
+            <select id="stateDropdown">
+                <option value="Punjab">Punjab</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <!-- Add other states as needed -->
+            </select>
+        </div>
+
+        <!-- State Data Section -->
+        <div class="state-data">
+            <h2 id="stateName">Punjab</h2>
+            <div class="info-box">
+                <h3>Soil Type:</h3>
+                <p id="soilType">Sandy soil, Clay Soil, Peat Soil, Silt Soil, Loam soil</p>
+            </div>
+            <div class="info-box">
+                <h3>Climate:</h3>
+                <p id="climate">Inland subtropical location, semiarid to subhumid, hot summers.</p>
+            </div>
+            <div class="info-box">
+                <h3>Suitable Crops:</h3>
+                <ul id="cropsList">
+                    <li>Wheat</li>
+                    <li>Rice</li>
+                    <li>Cotton</li>
+                    <li>Sugarcane</li>
+                </ul>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produce</th>
+                        <th>Quantity produced (2023)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Wheat</td>
+                        <td>1,62,00,000 tonnes</td>
+                    </tr>
+                    <tr>
+                        <td>Rice</td>
+                        <td>1,85,86,000 tonnes</td>
+                    </tr>
+                    <tr>
+                        <td>Cotton</td>
+                        <td>59,500 tonnes</td>
+                    </tr>
+                    <tr>
+                        <td>Sugarcane</td>
+                        <td>84,000 kilograms</td>
+                    </tr>
+                    <tr>
+                        <td>Maize</td>
+                        <td>5,00,000 tonnes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
